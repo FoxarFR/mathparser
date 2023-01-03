@@ -2,11 +2,12 @@
   "name": "mathparser",
   "version": "2023.0.1",
   "description": "Typescript port of the Java mXparser Framework",
-  "main": "out/Tutorial.js",
-  "bin": "out/Tutorial.js",
-  "types": "out/Tutorial.d.ts",
+  "main": "lib/Tutorial.js",
+  "bin": "lib/Tutorial.js",
+  "types": "lib/Tutorial.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "author": "Thilo Schaber",
   "keywords": [
@@ -21,9 +22,15 @@
   "homepage": "http://mathparser.org/",
   "license": "ISC",
   "dependencies": {
-    "bignumber.js": "^9.1.0",
-    "j4ts": "^0.7.2",
-    "tsc": "^1.20150623.0",
-    "typescript": "^4.2.4"
+    "bignumber.js": "^9.1.1",
+    "j4ts": "^0.7.2"
+  },
+  "devDependencies": {
+    "tsc-silent": "^1.2.2",
+    "@types/node": "^16.11.6",
+    "prettier": "^2.5.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.9.4"
   }
 }
