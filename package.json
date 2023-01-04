@@ -7,7 +7,8 @@
   "types": "out/mariuszgromada/math/mxparser/Tutorial.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "postinstall": "link-module-alias"
   },
   "author": "Thilo Schaber",
   "keywords": [
@@ -26,15 +27,15 @@
     "j4ts": "^0.7.2"
   },
   "devDependencies": {
-    "tsc-silent": "^1.2.2",
     "@types/node": "^16.11.6",
+    "link-module-alias": "^1.2.0",
     "prettier": "^2.5.1",
+    "tsc-silent": "^1.2.2",
     "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^4.9.4"
   },
-  "paths": {
-    "@mxparser/*": ["out/mariuszgromada/math/mxparser/*"],
-    "@mxparser": ["out/mariuszgromada/math/mxparser"]
+  "_moduleAliases": {
+    "mathparser": "out/mariuszgromada/math/mxparser"
   }
 }
