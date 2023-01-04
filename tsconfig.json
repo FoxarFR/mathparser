@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es2020",
     "module": "commonjs",
-    "outDir": "dist",
+    "outDir": "lib",
     "rootDir": "./org/mariuszgromada/math/mxparser", 
     "sourceMap": true,
     "declaration": true
