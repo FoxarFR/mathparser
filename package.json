@@ -1,14 +1,13 @@
 {
   "name": "mathparser",
-  "version": "2023.0.3",
+  "version": "2023.0.4",
   "description": "Typescript port of the Java mXparser Framework",
-  "main": "out/mariuszgromada/math/mxparser/Tutorial.js",
-  "bin": "out/mariuszgromada/math/mxparser/Tutorial.js",
-  "types": "out/mariuszgromada/math/mxparser/Tutorial.d.ts",
+  "main": "lib/Tutorial.js",
+  "bin": "lib/Tutorial.js",
+  "types": "lib/Tutorial.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "postinstall": "link-module-alias"
+    "build": "tsc"
   },
   "author": "Thilo Schaber",
   "keywords": [
@@ -28,14 +27,10 @@
   },
   "devDependencies": {
     "@types/node": "^16.11.6",
-    "link-module-alias": "^1.2.0",
     "prettier": "^2.5.1",
     "tsc-silent": "^1.2.2",
     "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^4.9.4"
-  },
-  "_moduleAliases": {
-    "mathparser": "out/mariuszgromada/math/mxparser"
   }
 }
