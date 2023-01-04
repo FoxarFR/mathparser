@@ -1,6 +1,6 @@
 {
   "name": "mathparser",
-  "version": "2023.0.1",
+  "version": "2023.0.2",
   "description": "Typescript port of the Java mXparser Framework",
   "main": "lib/Tutorial.js",
   "bin": "lib/Tutorial.js",
